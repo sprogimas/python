@@ -22,17 +22,17 @@ textbox3=Entry(root, textvariable=data3, fg='red')
 textbox3.grid(row=3,column=1)
 
 
+print(data1)
+
+
 def funkcija():
-    print("Asset watcher 0.2")
+    skaicius = data1 / data2
+    return skaicius
 
 
 
-
-
-
-button1=Button(root, command=funkcija(), text='SKAICIUOTI', fg='blue')
+button1=Button(root, command=funkcija, text='SKAICIUOTI', fg='blue')
 button1.grid(row=2,column=1)
-
 
 
 root.mainloop()
