@@ -15,19 +15,19 @@ textbox1.grid(row=0,column=1)
 textbox2=Entry(root, textvariable=data2, fg='blue')
 textbox2.grid(row=1,column=1)
 
-label3 = Label(root, text="Jusu sekundinis atlyginimas: ", fg='red')
+label3 = Label(root, text="Jusu valandinis atlyginimas: ", fg='red')
 label3.grid(row=3,column=0, padx=5,pady=10)
 
-textbox3=Entry(root, textvariable=data3, fg='red')
+textbox3=Message(root, textvariable=data3, fg='red')
 textbox3.grid(row=3,column=1)
 
 
-print(data1)
+print()
+
 
 
 def funkcija():
-    skaicius = data1 / data2
-    return skaicius
+    print("Asset Watcher 0.2 initiated. Please stay calm while watching your assets.")
 
 
 
