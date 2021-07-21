@@ -1,0 +1,38 @@
+from tkinter import *
+
+root = Tk()
+root.geometry("360x240")
+root.title("Asset watcher 0.2")
+label1 = Label(root, text="Iveskite savo menesio atlyginima: ", fg='blue')
+label1.grid(row=0,column=0,padx=5,pady=10)
+label2 = Label(root, text="Iveskite dirbama valandu skaiciu: ", fg='blue')
+label2.grid(row=1,column=0, padx=10,pady=15)
+data1=IntVar()
+data2=IntVar()
+data3=IntVar()
+textbox1=Entry(root, textvariable=data1, fg='blue')
+textbox1.grid(row=0,column=1)
+textbox2=Entry(root, textvariable=data2, fg='blue')
+textbox2.grid(row=1,column=1)
+
+label3 = Label(root, text="Jusu sekundinis atlyginimas: ", fg='red')
+label3.grid(row=3,column=0, padx=5,pady=10)
+
+textbox3=Entry(root, textvariable=data3, fg='red')
+textbox3.grid(row=3,column=1)
+
+
+def funkcija():
+    print("Asset watcher 0.2")
+
+
+
+
+
+
+button1=Button(root, command=funkcija(), text='SKAICIUOTI', fg='blue')
+button1.grid(row=2,column=1)
+
+
+
+root.mainloop()
